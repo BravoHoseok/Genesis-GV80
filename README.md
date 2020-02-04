@@ -1,4 +1,4 @@
 # Genesis-GV80
 
 # Screenshot
-![GV80_prj1](GV80_prj1.jpg)
+<img scr="/Img/to/GV80_prj1.jpg" width="450px" height="300px">
