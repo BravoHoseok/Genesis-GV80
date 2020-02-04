@@ -1,2 +1,4 @@
 # Genesis-GV80
-for upload materials
+
+# Screenshot
+![GV80_prj1](./img/GV80_prj1.jpg)
