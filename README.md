@@ -44,10 +44,6 @@ There were too many kinds of graphic images (more than 100) according to vehicle
 Stabilized the functional requirements of the screen touch system and the verification process. the following presents the contents of the specification of the touch screen system.<br>
 <p align="center">
 <img src="./Img/GV80_prj1.jpg"><br>
-Fig.2) the functional specification of the touch screen system
-<p>
-
-<p align="center">
 <img src="./Img/GV80_prj2.jpg"><br>
-Fig.3) the functional specification of the touch screen system
+Fig.2) the software tool that generates and verified software program automatically
 <p>
