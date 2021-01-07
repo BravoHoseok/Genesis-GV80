@@ -83,8 +83,8 @@ When calculating angle values with C language, we can use an arctan(x) function 
 
 <p align="center">
 <img src="./Img/GV80_qud.jpg"><br>
-**Fig.4)** Quadrants and Coordinates in 2-dimentional plane
 <p>
+**Fig.4) Quadrants and Coordinates in 2-dimentional plane**
 
 **Fig.4)** shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn and Yn values will increase(X3 -> X2-> X1) and decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
 
