@@ -103,6 +103,3 @@ Fig.5) showes the ratio property of Xn and Xy. It means that, the ratio of Xn an
 *(Step 3)* Created the algorithm that calculates the angle of a current position of the rotary gesture in a defined graphic region by using coordinates, a center position, and quadrant<br>
 *(Step 4)* Devised the algorithm detecting the rotation direction of an object by employing a rotation speed, a moving tendency, and a previous direction of it<br>
 *(Step 5)* Programmed these algorithms with C language and integrated them into software modules only to transfer the exact angle and direction of a rotary gesture to application modules<br>
-
-### Result #4
-The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
