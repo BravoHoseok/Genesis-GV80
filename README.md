@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="assets/css/style.css" />
+
 # Genesis G80(RG3), GV80(JX1)
 
 ## 1. Project Overview
