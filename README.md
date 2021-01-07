@@ -138,5 +138,5 @@ EX.2) Let's suppose that X=2 and Y=1. The return value of the above function is 
 EX.3) Let's suppose that X=1 and Y=4. The return value of the above function is going to 72deg and arctan(4/1) value is going to 75.9deg.<br>
 
 ### Result #4
-The value of arctan(x) is more accurate than this equation. However, the tolerance of (arctan(x) - this equation) is ±5deg or so. If a rotary gesture does not need very much accurate angle value, this approach will provide simple and fast operation. This solution save memory capacity used for lookup-talbe of arctan(x).<br>
+The value of arctan(x) is more accurate than the return value of this function. However, the tolerance of (arctan(x) - the return value of this function) is ±5deg or so. If a rotary gesture does not need very much accurate angle value, this approach will provide simple and fast operation. This solution saved memory capacity used for lookup-talbe of arctan(x).<br>
 ___
