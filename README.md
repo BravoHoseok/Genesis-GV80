@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="assets/css/style.css" />
+<style>
+    
+</style>
 
 # Genesis G80(RG3), GV80(JX1)
 
