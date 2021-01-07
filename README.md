@@ -29,7 +29,7 @@ Since this project was the first new project in our branch, there was not any gu
 Stabilized the functional requirements of the screen touch system and the verification process. the following presents the contents of the specification of the touch screen system.<br>
 <p align="center">
 <img src="./Img/GV80_prj3.jpg"><br>
-##### Fig.1) the functional specification of the touch screen system)
+Fig.1) the functional specification of the touch screen system
 <p>
 
 ---
@@ -43,12 +43,12 @@ There were too many kinds of graphic images (more than 100) according to vehicle
 *(Step 4)* Programmed all the functions and algorithms by utilizing VBA (Visual Basic Application) programming, automating software code generation<br>
 <p align="center">
 <img src="./Img/GV80_prj1.jpg"><br>
-**Fig.2)** Option setting page in the software tool
+Fig.2) Option setting page in the software tool
 <p>
 
 <p align="center">
 <img src="./Img/GV80_prj2.jpg"><br>
-**Fig.3)** Coordinates generation page in the software tool
+Fig.3) Coordinates generation page in the software tool
 <p>
 
 ### Result #2
@@ -83,14 +83,14 @@ When calculating angle values with C language, we can use an arctan(x) function 
 
 <p align="center">
 <img src="./Img/GV80_qud.jpg"><br>
-__Fig.4) Quadrants and Coordinates in 2-dimentional plane__
+Fig.4) Quadrants and Coordinates in 2-dimentional plane
 <p>
 
 **Fig.4)** shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn and Yn values will increase(X3 -> X2-> X1) and decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
 
 <p align="center">
 <img src="./Img/GV80_rato.jpg"><br>
-**Fig.5)** the ratio property of Xn and Xy in the circle
+<b>Fig.5) the ratio property of Xn and Xy in the circle</b>
 <p>
 
 **Fig.5)** showes the ratio property of Xn and Xy. It means that the ratio of Xn and Xy are going to change according to the variation of 𝜃n.
