@@ -983,3 +983,7 @@
   margin: 0 .2em .25em -1.6em;
   vertical-align: middle;
 }
+
+img.alignleft{float:left}
+img.alignright{float:right}
+img.aligncenter{display:block;margin:0 auto}
