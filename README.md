@@ -132,10 +132,11 @@ Now, we can calculate angle values as the following pseudocode.
 >&nbsp;&nbsp;&nbsp;&nbsp; return (CalTemp * 90.0f);<br>
 }<br>
 
-Let's compare this equation and the value of arctan(x).<br>
+Let's compare return values of this equation and the value of arctan(x).<br>
 EX.1) Let's suppose that X=1 and Y=1. The return value of the above function is going to 45deg and arctan(1/2) value is going to 45deg.<br>
 EX.2) Let's suppose that X=2 and Y=1. The return value of the above function is going to 30deg and arctan(1/2) value is going to 26.5deg.<br>
 EX.3) Let's suppose that X=1 and Y=4. The return value of the above function is going to 72deg and arctan(4/1) value is going to 75.9deg.<br>
 
 ### Result #4
 The value of arctan(x) is more accurate than this equation. However, the tolerance of (arctan(x) - this equation) is ±5deg or so. If a rotary gesture does not need very much accurate angle value, this approach will provide simple and fast operation. This solution save memory capacity used for lookup-talbe of arctan(x).<br>
+___
