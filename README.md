@@ -26,4 +26,6 @@ This section demonstrates what was challenging issues, how to research them, and
 
 ### Result #1
 &nbsp;&nbsp; Stabilized the functional requirements of the screen touch system and the verification process. the following presents the contents of the specification of the touch screen system.<br>
-![GV80_prj3](./Img/GV80_prj3.jpg)
+![GV80_prj3](./Img/GV80_prj3.jpg)<br>
+Fig.1) the functional specification of the touch screen system
+
