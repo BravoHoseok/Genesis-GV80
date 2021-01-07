@@ -76,3 +76,33 @@ Fig.3) Coordinates generation page in the software tool
 
 ### Result #3
 The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
+
+---
+### Challenge #4 - Programming gesture algorithms
+We needed to satisfy our customer requirements for gesture functions such as rotation, flicker and drag. Especially when implementing the algorithm of the rotary gesture, an object’s high moving speed and coordinate jitter caused several errors in calculating the total distance and direction (clock wise or counter clock wise) of an object.
+
+### Research and Solution #4
+When calculating angle values with C language, we can use an arctan(x) function in the math library. However, the usage of the arctan(x) function will cause an delay in operation time of Microprocessors. In embedded system having limited resources, the time management of software task period is very important. Thus, I introduced simple an equation that does not use  the arctan(x)
+
+<p align="center">
+<img src="./Img/GV80_Quad.jpg"><br>
+Fig.4) Quadrants and Coordinates in 2-dimentional plane
+<p>
+
+Fig.4) shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn and Yn values will increase(X3 -> X2-> X1) and decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
+
+<p align="center">
+<img src="./Img/GV80_Quad.jpg"><br>
+Fig.5) the ratio property of Xn and Xy in the circle
+<p>
+
+Fig.5) showes the ratio property of Xn and Xy. It means that, the ratio of Xn and Xy are going to change according to the variation of 𝜃n.
+
+*(Step 1)* Defined specifications of the several gestures including the moving speed of an object<br>
+*(Step 2)* Designed the software modules of the gestures: logic flow chart, state machine, module dependency, data structure, tuning parameters<br>
+*(Step 3)* Created the algorithm that calculates the angle of a current position of the rotary gesture in a defined graphic region by using coordinates, a center position, and quadrant<br>
+*(Step 4)* Devised the algorithm detecting the rotation direction of an object by employing a rotation speed, a moving tendency, and a previous direction of it<br>
+*(Step 5)* Programmed these algorithms with C language and integrated them into software modules only to transfer the exact angle and direction of a rotary gesture to application modules<br>
+
+### Result #4
+The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
