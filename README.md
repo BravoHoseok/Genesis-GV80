@@ -37,18 +37,18 @@ Fig.1) the functional specification of the touch screen system
 There were too many kinds of graphic images (more than 100) according to vehicle options and regions. Whenever a lot of graphic images are changed at customer's request, the touch coordinates were programmed manually at that time to match these graphic images with touch coordinates. It caused time-consuming programming and miss matched problem between the graphic images and the touch coordinates.
 
 ### Research and Solution #2
-*(Step 1)* Formulated the algorithm that calculates the touch areas and the coordinates according to the graphic images. In fig 3), by simply placing a rectangular box on a graphic image, it calculates coordinates of a specific touch region (a red rectangular box). And then input a name of the touch region and calculated coordinates in the left table<br>
-*(Step 2)* Designed the function that links data structure used in software program with information of the touch area. In fig 2), 'Generate TC Coordinates' button performs works that generate software programs in the form of *.h and *.c file<br>
-*(Step 3)* Created the verification algorithm that checks overlapped touch areas, wrong connected data structure, and software program errors. In fig 2), 'Linking coordinates To Option' button executes works that verify software programs and errors: overlapped touch areas, touch areas out of the range of entire graphic image, incorrectly connected data structure, invalid name of variables, same name of the data used in software programs<br>
+*(Step 1)* Formulated the algorithm that calculates the touch areas and the coordinates according to the graphic images. In **fig 3)**, by simply placing a rectangular box on a graphic image, it calculates coordinates of a specific touch region (a red rectangular box). And then input a name of the touch region and calculated coordinates in the left table<br>
+*(Step 2)* Designed the function that links data structure used in software program with information of the touch area. In **fig 2)**, 'Generate TC Coordinates' button performs works that generate software programs in the form of *.h and *.c file<br>
+*(Step 3)* Created the verification algorithm that checks overlapped touch areas, wrong connected data structure, and software program errors. In **fig 2)**, 'Linking coordinates To Option' button executes works that verify software programs and errors: overlapped touch areas, touch areas out of the range of entire graphic image, incorrectly connected data structure, invalid name of variables, same name of the data used in software programs<br>
 *(Step 4)* Programmed all the functions and algorithms by utilizing VBA (Visual Basic Application) programming, automating software code generation<br>
 <p align="center">
 <img src="./Img/GV80_prj1.jpg"><br>
-Fig.2) Option setting page in the software tool
+**Fig.2) Option setting page in the software tool**
 <p>
 
 <p align="center">
 <img src="./Img/GV80_prj2.jpg"><br>
-Fig.3) Coordinates generation page in the software tool
+**Fig.3) Coordinates generation page in the software tool**
 <p>
 
 ### Result #2
@@ -83,17 +83,17 @@ When calculating angle values with C language, we can use an arctan(x) function 
 
 <p align="center">
 <img src="./Img/GV80_qud.jpg"><br>
-Fig.4) Quadrants and Coordinates in 2-dimentional plane
+**Fig.4) Quadrants and Coordinates in 2-dimentional plane**
 <p>
 
-Fig.4) shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn and Yn values will increase(X3 -> X2-> X1) and decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
+**Fig.4)** shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn and Yn values will increase(X3 -> X2-> X1) and decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
 
 <p align="center">
 <img src="./Img/GV80_rato.jpg"><br>
-Fig.5) the ratio property of Xn and Xy in the circle
+**Fig.5) the ratio property of Xn and Xy in the circle**
 <p>
 
-Fig.5) showes the ratio property of Xn and Xy. It means that the ratio of Xn and Xy are going to change according to the variation of 𝜃n.
+**Fig.5)** showes the ratio property of Xn and Xy. It means that the ratio of Xn and Xy are going to change according to the variation of 𝜃n.
 
 Now, we can calculate angle values as the following pseudocode.
 
@@ -133,9 +133,9 @@ Now, we can calculate angle values as the following pseudocode.
 }<br>
 
 Let's compare return values of this equation and values of arctan(x).<br>
-EX.1) Let's suppose that X=1 and Y=1. The return value of the above function is going to 45deg and arctan(1/2) value is going to 45deg.<br>
-EX.2) Let's suppose that X=2 and Y=1. The return value of the above function is going to 30deg and arctan(1/2) value is going to 26.5deg.<br>
-EX.3) Let's suppose that X=1 and Y=4. The return value of the above function is going to 72deg and arctan(4/1) value is going to 75.9deg.<br>
+**EX.1)** Let's suppose that X=1 and Y=1. The return value of the above function is going to 45deg and arctan(1/2) value is going to 45deg.<br>
+**EX.2)** Let's suppose that X=2 and Y=1. The return value of the above function is going to 30deg and arctan(1/2) value is going to 26.5deg.<br>
+**EX.3)** Let's suppose that X=1 and Y=4. The return value of the above function is going to 72deg and arctan(4/1) value is going to 75.9deg.<br>
 
 ### Result #4
 The value of arctan(x) is more accurate than the return value of this function. However, the tolerance of (arctan(x) - the return value of this function) is ±5deg or so. If a rotary gesture does not need very much accurate angle value, this approach will provide simple and fast operation. This solution saved memory capacity used for lookup-talbe of arctan(x).<br>
