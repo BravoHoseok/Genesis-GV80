@@ -30,5 +30,6 @@ Since this project was the first new project in our branch, there was not any gu
 Stabilized the functional requirements of the screen touch system and the verification process. the following presents the contents of the specification of the touch screen system.<br>
 <p align="center">
 ![GV80_prj3](./Img/GV80_prj3.jpg)<br>
+<img src="./Img/GV80_prj3.jpg">
 Fig.1) the functional specification of the touch screen system
 <p>
