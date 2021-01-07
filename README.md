@@ -8,7 +8,7 @@
 
 ## 2. Development Environment
 -  Real-Time based OS Software Platform
--  IDE: Visual Studio, Compiler(Green Hills)
+-  IDE: Visual Studio, Compiler: Green Hills
 -  RH850F1L 64-bit Microprocessor | mXT449T(Screen Touch IC)
 
 ## 3. Challenging issues / Research and Solution / Result
@@ -39,9 +39,6 @@ There were too many kinds of graphic images (more than 100) according to vehicle
 *(Step 2)* Designed the function that links data structure used in software program with information of the touch area. In fig 2), 'Generate TC Coordinates' button performs works that generate software programs in the form of *.h and *.c file<br>
 *(Step 3)* Created the verification algorithm that checks overlapped touch areas, wrong connected data structure, and software program errors. In fig 2), 'Linking coordinates To Option' button executes works that verify software programs and errors: overlapped touch areas, touch areas out of the range of entire graphic image, incorrectly connected data structure, invalid name of variables, same name of the data used in software programs<br>
 *(Step 4)* Programmed all the functions and algorithms by utilizing VBA (Visual Basic Application) programming, automating software code generation<br>
-
-### Result #2
-The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
 <p align="center">
 <img src="./Img/GV80_prj1.jpg"><br>
 Fig.2) Option setting page in the software tool
@@ -51,3 +48,6 @@ Fig.2) Option setting page in the software tool
 <img src="./Img/GV80_prj2.jpg"><br>
 Fig.3) Coordinates generation page in the software tool
 <p>
+
+### Result #2
+The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
