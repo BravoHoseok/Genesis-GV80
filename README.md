@@ -35,15 +35,7 @@ Fig.1) the functional specification of the touch screen system
 There were too many kinds of graphic images (more than 100) according to vehicle options and regions. Whenever a lot of graphic images are changed at customer's request, the touch coordinates were programmed manually at that time to match these graphic images with touch coordinates. It caused time-consuming programming and miss matched problem between the graphic images and the touch coordinates.
 
 ### Research and Solution #2
-*(Step 1)* Formulated the algorithm that calculates the touch areas and the coordinates according to the graphic images<br>
-*(Step 2)* Designed the function that links data structure used in software program with information of the touch area<br>
-*(Step 3)* Created the verification algorithm that checks overlapped touch areas, wrong connected data structure, and software program errors<br>
-*(Step 4)* Programmed all the functions and algorithms by utilizing VBA programming, automating software code generation<br>
-
-### Result #2
-Stabilized the functional requirements of the screen touch system and the verification process. the following presents the contents of the specification of the touch screen system.<br>
-<p align="center">
-<img src="./Img/GV80_prj1.jpg"><br>
-<img src="./Img/GV80_prj2.jpg"><br>
-Fig.2) the software tool that generates and verified software program automatically
-<p>
+*(Step 1)* Formulated the algorithm that calculates the touch areas and the coordinates according to the graphic images. In fig 3), by simply placing a rectangular box on a graphic image, it calculates coordinates of a specific touch region (a red rectangular box). And then input a name of the touch region and calculated coordinates in the left table<br>
+*(Step 2)* Designed the function that links data structure used in software program with information of the touch area. In fig 2), 'Generate TC Coordinates' button performs works that generate software programs in the form of *.h and *.c file<br>
+*(Step 3)* Created the verification algorithm that checks overlapped touch areas, wrong connected data structure, and software program errors. In fig 2), 'Linking coordinates To Option' button executes works that verify software programs and errors: overlapped touch areas, touch areas out of the range of entire graphic image, incorrectly connected data structure, invalid name of variables, same name of the data used in software programs<br>
+*(Step 4)* Programmed all the functions and algorithms by utilizing VBA (Visual Basic Application) programming, automating software code generation<br>
