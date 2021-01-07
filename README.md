@@ -10,6 +10,7 @@
 -  Real-Time based OS Software Platform
 -  IDE: Visual Studio, Compiler: Green Hills
 -  RH850F1L 64-bit Microprocessor | mXT449T(Screen Touch IC)
+-  Git, Jira, CMake, Script Tool
 
 ## 3. Challenging issues / Research and Solution / Result
 This section demonstrates what was challenging issues, how to research them, and how to solve them
