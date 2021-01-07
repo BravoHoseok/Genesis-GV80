@@ -76,14 +76,14 @@ We needed to satisfy our customer requirements for gesture functions such as rot
 When calculating angle values with C language, we can use an arctan(x) function in the math library. However, the usage of the arctan(x) function will cause an delay in operation time of Microprocessors. In embedded system having limited resources, the time management of software task period is very important. Thus, I introduced simple an equation that does not use  the arctan(x)
 
 <p align="center">
-<img src="./Img/GV80_Quad.jpg"><br>
+<img src="./Img/GV80_qud.jpg"><br>
 Fig.4) Quadrants and Coordinates in 2-dimentional plane
 <p>
 
 Fig.4) shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn and Yn values will increase(X3 -> X2-> X1) and decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
 
 <p align="center">
-<img src="./Img/GV80_Ratio.jpg"><br>
+<img src="./Img/GV80_rato.jpg"><br>
 Fig.5) the ratio property of Xn and Xy in the circle
 <p>
 
