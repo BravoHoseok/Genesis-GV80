@@ -1,7 +1,4 @@
-<link rel="stylesheet" href="assets/css/style.css" />
-<style>
-    
-</style>
+<link href="./markdown-github.css"/>
 
 # Genesis G80(RG3), GV80(JX1)
 
