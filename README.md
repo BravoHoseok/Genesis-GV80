@@ -90,7 +90,7 @@ Fig.4) Quadrants and Coordinates in 2-dimentional plane
 
 <p align="center">
 <img src="./Img/GV80_rato.jpg"><br>
-<b>Fig.5) the ratio property of Xn and Xy in the circle</b>
+<strong>Fig.5) the ratio property of Xn and Xy in the circle</strong>
 <p>
 
 **Fig.5)** showes the ratio property of Xn and Xy. It means that the ratio of Xn and Xy are going to change according to the variation of 𝜃n.
