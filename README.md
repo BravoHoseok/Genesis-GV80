@@ -14,6 +14,7 @@
 ## 3. Challenging issues / Research and Solution / Result
 This section demonstrates what was challenging issues, how to research them, and how to solve them
 
+---
 ### Challenge #1 - Defining a specification(function, verification) of the touch screen system
 Since this project was the first new project in our branch, there was not any guidance for the touch screen system
 
@@ -31,6 +32,7 @@ Stabilized the functional requirements of the screen touch system and the verifi
 Fig.1) the functional specification of the touch screen system
 <p>
 
+---
 ### Challenge #2 - Automating time-consuming manual programming by creating a software tool
 There were too many kinds of graphic images (more than 100) according to vehicle options and regions. Whenever a lot of graphic images are changed at customer's request, the touch coordinates were programmed manually at that time to match these graphic images with touch coordinates. It caused time-consuming programming and miss matched problem between the graphic images and the touch coordinates.
 
@@ -52,6 +54,7 @@ Fig.3) Coordinates generation page in the software tool
 ### Result #2
 The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
 
+---
 ### Challenge #3 - Inventing the software algorithm that compensates for erroneously aligned physical coordinates
 To provide a reliable touch system at a final production stage, I decided to compensate for misalignment of the
 physical coordinates due to incorrect attachment of the touch screen sensor on a TFT LCD.
@@ -61,6 +64,15 @@ physical coordinates due to incorrect attachment of the touch screen sensor on a
 *(Step 2)* Programmed the rotation matrix converting the misaligned physical coordinates into the normal ones<br>
 *(Step 3)* Added service functions for production engineers to tune the parameters of the rotation matrix and to check the quality of the touch screen sensor<br>
 *(Step 4)* Educated production engineers about the tuning and verification method<br>
+<p align="center">
+<img src="./Img/GV80_prj1.jpg"><br>
+Fig.2) Option setting page in the software tool
+<p>
+
+<p align="center">
+<img src="./Img/GV80_prj2.jpg"><br>
+Fig.3) Coordinates generation page in the software tool
+<p>
 
 ### Result #3
-The solution #3 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
+The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
