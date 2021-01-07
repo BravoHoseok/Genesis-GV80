@@ -51,3 +51,16 @@ Fig.3) Coordinates generation page in the software tool
 
 ### Result #2
 The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
+
+### Challenge #3 - Inventing the software algorithm that compensates for erroneously aligned physical coordinates
+To provide a reliable touch system at a final production stage, I decided to compensate for misalignment of the
+physical coordinates due to incorrect attachment of the touch screen sensor on a TFT LCD.
+
+### Research and Solution #3
+*(Step 1)* Designed the entire tuning process being employed in the final production stage<br>
+*(Step 2)* Programmed the rotation matrix converting the misaligned physical coordinates into the normal ones<br>
+*(Step 3)* Added service functions for production engineers to tune the parameters of the rotation matrix and to check the quality of the touch screen sensor<br>
+*(Step 4)* Educated production engineers about the tuning and verification method<br>
+
+### Result #3
+The solution #3 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
