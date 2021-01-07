@@ -15,17 +15,17 @@
 This section demonstrates what was challenging issues, how to research them, and how to solve them
 
 ### Challenge #1 - Defining a specification(function, verification) of the touch screen system
-&nbsp;&nbsp; Since this project was the first new project in our branch, there was not any guidance for the touch screen system
+Since this project was the first new project in our branch, there was not any guidance for the touch screen system
 
 ### Research and Solution #1
-&nbsp;&nbsp; *(Step 1)* Searched a lot of academic materials relevant to the function and verification of the touch screen system<br>
-&nbsp;&nbsp; *(Step 2)* Sorted out necessary information according to our project requirements<br>
-&nbsp;&nbsp; *(Step 3)* Detailed all the functional elements of the touch screen system with functional safety requirements considered<br>
-&nbsp;&nbsp; *(Step 4)* Finalized the specification with engineers of the cooperative company<br>
-&nbsp;&nbsp; *(Step 5)* Verified functions of the touch screen system in a test laboratory with a robot arm machine<br>
+*(Step 1)* Searched a lot of academic materials relevant to the function and verification of the touch screen system<br>
+*(Step 2)* Sorted out necessary information according to our project requirements<br>
+*(Step 3)* Detailed all the functional elements of the touch screen system with functional safety requirements considered<br>
+*(Step 4)* Finalized the specification with engineers of the cooperative company<br>
+*(Step 5)* Verified functions of the touch screen system in a test laboratory with a robot arm machine<br>
 
 ### Result #1
-&nbsp;&nbsp; Stabilized the functional requirements of the screen touch system and the verification process. the following presents the contents of the specification of the touch screen system.<br>
+Stabilized the functional requirements of the screen touch system and the verification process. the following presents the contents of the specification of the touch screen system.<br>
 ![GV80_prj3](./Img/GV80_prj3.jpg)<br>
 Fig.1) the functional specification of the touch screen system
 
