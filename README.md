@@ -91,40 +91,40 @@ Fig.5) showes the ratio property of Xn and Xy. It means that, the ratio of Xn an
 
 Now, we can calculate angle values as the following pseudocode.
 
->(float) function f32AngleCalcuation(Xn, Yn, Xo, Yo)
->{
-&nbsp;&nbsp;&nbsp;&nbsp;(int) Delta_X; Delta_Y; Abs_X; Abs_Y;
-&nbsp;&nbsp;&nbsp;&nbsp;(folat) Offset; CalTemp;
+>(float) function f32AngleCalcuation(Xn, Yn, Xo, Yo)<br>
+>{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(int) Delta_X; Delta_Y; Abs_X; Abs_Y;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(folat) Offset; CalTemp;<br>
 
->&nbsp;&nbsp;&nbsp;&nbsp;Delta_X = Yn - Yo;
-&nbsp;&nbsp;&nbsp;&nbsp;Abs_X = Absolute(Delta_X);
-&nbsp;&nbsp;&nbsp;&nbsp;Delta_Y = Yn - Yo
-&nbsp;&nbsp;&nbsp;&nbsp;Abs_Y = Absolute(Delta_Y);
+>&nbsp;&nbsp;&nbsp;&nbsp;Delta_X = Yn - Yo;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Abs_X = Absolute(Delta_X);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Delta_Y = Yn - Yo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Abs_Y = Absolute(Delta_Y);<br>
 
->&nbsp;&nbsp;&nbsp;&nbsp;if(zero==(Abs_X + Abs_X))
-&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offset = 0.0f;       
-&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;else
-&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offset = (Delta_Y / (Abs_X + Abs_Y));
-&nbsp;&nbsp;&nbsp;&nbsp;}
+>&nbsp;&nbsp;&nbsp;&nbsp;if(zero==(Abs_X + Abs_X))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offset = 0.0f; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offset = (Delta_Y / (Abs_X + Abs_Y));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 
->&nbsp;&nbsp;&nbsp;&nbsp;if (Delta_X < 0)
-&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CalTemp = 2.0f - Offset;
-&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;else if (Delta_Y < 0)
-&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CalTemp = 4.0f + Offset;
-&nbsp;&nbsp;&nbsp;&nbsp;}
-&nbsp;&nbsp;&nbsp;&nbsp;else
-&nbsp;&nbsp;&nbsp;&nbsp;{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Nothing
-&nbsp;&nbsp;&nbsp;&nbsp;}
+>&nbsp;&nbsp;&nbsp;&nbsp;if (Delta_X < 0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CalTemp = 2.0f - Offset;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;else if (Delta_Y < 0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CalTemp = 4.0f + Offset;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Nothing<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
 
->&nbsp;&nbsp;&nbsp;&nbsp; return (CalTemp * 90.0f);
-}
+>&nbsp;&nbsp;&nbsp;&nbsp; return (CalTemp * 90.0f);<br>
+}<br>
 
 *(Step 1)* Defined specifications of the several gestures including the moving speed of an object<br>
 *(Step 2)* Designed the software modules of the gestures: logic flow chart, state machine, module dependency, data structure, tuning parameters<br>
