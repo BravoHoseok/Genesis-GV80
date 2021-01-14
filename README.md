@@ -15,7 +15,6 @@
 ## 3. Challenging issues / Research and Solution / Result
 This section demonstrates what was challenging issues, how to research them, and how to solve them
 
----
 ### Challenge #1 - Defining a specification(function, verification) of the touch screen system
 Since this project was the first new project in our branch, there was not any guidance for the touch screen system
 
