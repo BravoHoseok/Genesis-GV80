@@ -33,13 +33,13 @@ Stabilized the specficiation of the screen touch system and the verification pro
 <p>
 
 ---
-### Challenge #2 - Automating time-consuming manual programming by creating a software tool
-There were too many kinds of graphic images (more than 100) according to vehicle options and regions. Whenever a lot of graphic images are changed at customer's request, the touch coordinates were programmed manually at that time to match these graphic images with touch coordinates. It caused time-consuming programming and miss matched problem between the graphic images and the touch coordinates.
+### Challenge #2 - Automating the time-consuming manual programming by inventing a software tool
+There were too many kinds of graphic images (more than 100) according to vehicle options and regions. Whenever the images are changed by customer's request, the touch coordinates were changed manually at that time to match these graphic images with touch coordinates. It caused time-consuming works and software quality issues.
 
-### Research and Solution #2
-**(Step 1)** Formulated the algorithm that calculates the touch areas and the coordinates according to the graphic images. In **fig.3)**, by simply placing a rectangular box on a graphic image, it calculates coordinates of a specific touch region (a red rectangular box). And then input a name of the touch region and calculated coordinates in the left table<br>
-**(Step 2)** Designed the function that links data structure used in software program with information of the touch area. In **fig.2)**, 'Generate TC Coordinates' button performs works that generate software programs in the form of *.h and *.c file<br>
-**(Step 3)** Created the verification algorithm that checks overlapped touch areas, wrong connected data structure, and software program errors. In **fig.2)**, 'Linking coordinates To Option' button executes works that verify software programs and errors: overlapped touch areas, touch areas out of the range of entire graphic image, incorrectly connected data structure, invalid name of variables, same name of the data used in software programs<br>
+### Approach and Solution #2
+**(Step 1)** Formulated the algorithm that calculates the touch areas and the coordinates according to the graphic images. In **fig.3)**, by simply placing a rectangular box on a graphic image, it calculates coordinates of a specific touch region (a red rectangular box). And then make a name of the touch region and copuy the calculated coordinates in the left table<br>
+**(Step 2)** Designed the function that links data structure used in software program with information of the touch area. In **fig.2)**, 'Generate TC Coordinates' button performs the work that generates software programs in the form of *.h and *.c file<br>
+**(Step 3)** Created the verification algorithm that checks overlapped touch areas, wrong connected data structure, and software program errors. In **fig.2)**, 'Linking coordinates To Option' button triggers the work that verifies the generated software programs and errors: overlapped touch areas, touch areas out of the range of entire graphic image, incorrectly connected data structure, invalid name of variables, duplicated name of the data used in software programs<br>
 **(Step 4)** Programmed all the functions and algorithms by utilizing VBA (Visual Basic Application) programming, automating software code generation<br>
 <p align="center">
 <img src="./Img/GV80_prj1.jpg"><br>
@@ -52,48 +52,48 @@ There were too many kinds of graphic images (more than 100) according to vehicle
 <p>
 
 ### Result #2
-The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
+The solution #2 reduced the time spent on the manual programming works from a couple of days to 1 hours and improved the software quality<br>
 
 ---
 ### Challenge #3 - Inventing the software algorithm that compensates for erroneously aligned physical coordinates
-To provide a reliable touch system at a final production stage, I decided to compensate for misalignment of the
+To provide a reliable touch system at a final production stage, we decided to compensate for misalignment of the
 physical coordinates due to incorrect attachment of the touch screen sensor on a TFT LCD.
 
-### Research and Solution #3
+### Approach and Solution #3
 **(Step 1)** Designed the entire tuning process being employed in the final production stage<br>
 **(Step 2)** Programmed the rotation matrix converting the misaligned physical coordinates into the normal ones<br>
-**(Step 3)** Added service functions for production engineers to tune the parameters of the rotation matrix and to check the quality of the touch screen sensor<br>
+**(Step 3)** Added service functions for production engineers to tune the parameters of the rotation matrix and to check the function of the touch screen sensor<br>
 **(Step 4)** Educated production engineers about the tuning and verification method<br>
 
 ### Result #3
-The solution #2 reduced the time spent on the manual programming works from a couple of days to one or so hours and improved the quality of software programs<br>
+The solution #3 improved the yield of the mass production by reviving the TFT LCD having a bit misaligned touch screen sensor.
 
 ---
 ### Challenge #4 - Programming gesture algorithms
 We needed to satisfy our customer requirements for gesture functions such as rotation, flicker and drag. Especially when implementing the algorithm of the rotary gesture, an object’s high moving speed and coordinate jitter caused several errors in calculating the total distance and direction (clock wise or counter clock wise) of an object.
 
-### Research and Solution #4
-When calculating angle values with C language, we can use an arctan(x) function in the math library. However, the usage of the arctan(x) function will cause an delay in operation time of Microprocessors. In embedded system having limited resources, the time management of software task period is very important. Thus, I introduced simple an equation that does not use  the arctan(x)
+### Approach and Solution #4
+When calculating angle with C language, we can use an arctan(x) function in the math library. However, the usage of the arctan(x) will cause an delay in operation time of Microprocessors. In embedded system having limited resources, the time management of software tasks is very important. Thus, I introduced simple an equation that does not need to use the arctan(x)
 
 **(Step 1)** Defined specifications of the several gestures including the moving speed of an object<br>
 **(Step 2)** Designed the software modules of the gestures: logic flow chart, state machine, module dependency, data structure, tuning parameters<br>
 **(Step 3)** Created the algorithm that calculates the angle of a current position of the rotary gesture in a defined graphic region by using coordinates, a center position, and quadrant<br>
 **(Step 4)** Devised the algorithm detecting the rotation direction of an object by employing a rotation speed, a moving tendency, and a previous direction of it<br>
-**(Step 5)** Programmed these algorithms with C language and integrated them into software modules only to transfer the exact angle and direction of a rotary gesture to application modules<br>
+**(Step 5)** Programmed these algorithms and integrated them into software platfrom<br>
 
 <p align="center">
 <img src="./Img/GV80_qud.jpg"><br>
 <strong>Fig.4) Quadrants and Coordinates in 2-dimentional plane</strong>
 <p>
 
-**Fig.4)** shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn and Yn values will increase(X3 -> X2-> X1) and decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
+**Fig.4)** shows 4 quadrants, a circle (radius = 1), angles, center position, and random coordinates of the first quadrant. When a point moves from P3 through P1 to P2, 𝜃n value will decrease(𝜃3 -> 𝜃1 -> 𝜃2), Xn will increase(X3 -> X2-> X1) and Yn will decrease(Y3 -> Y2-> Y1) respectively. In this pattern, if we utlize a ratio of Xn and Yn according to 𝜃n, we can calculate 𝜃n. 
 
 <p align="center">
 <img src="./Img/GV80_rato.jpg"><br>
 <strong>Fig.5) the ratio property of Xn and Xy in the circle</strong>
 <p>
 
-**Fig.5)** showes the ratio property of Xn and Xy. It means that the ratio of Xn and Xy are going to change according to the variation of 𝜃n.
+**Fig.5)** shows the ratio property of Xn and Xy. It means that the ratio of Xn and Xy are going to change according to the variation of 𝜃n.
 
 Now, we can calculate angle values as the following pseudocode.
 
