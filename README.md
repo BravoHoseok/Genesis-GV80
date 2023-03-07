@@ -12,7 +12,7 @@
 -  RH850F1L 64-bit Microprocessor | mXT449T(Screen Touch IC)
 -  Git, Jira, CMake, Script Tool
 
-## 3. Challenging issues / Research and Solution / Result
+## 3. Challenging issues / Approach and Solution / Result
 This section demonstrates what were challenging issues, how to approach them, and how to solve them
 
 ### Challenge #1 - Defining a specification(function, verification) of the scree touch system
