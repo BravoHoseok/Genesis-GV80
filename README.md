@@ -1,4 +1,4 @@
-# Genesis G80(RG3), GV80(JX1)
+# Genesis G80 (RG3), GV80 (JX1)
 
 ## 1. Project Overview
 - This project has 3 parts: Panel controller, HVAC main controller, Rear controller
